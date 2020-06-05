@@ -9,17 +9,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+// COMPLETED (15) Add a class called ForecastAdapter
+// COMPLETED (22) Extend RecyclerView.Adapter<ForecastAdapter.ForecastAdapterViewHolder>
 public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapterViewHolder> {
 
-    // Within ForecastAdapter.java /////////////////////////////////////////////////////////////////
-    // TODO (15) Add a class file called ForecastAdapter
-    // TODO (22) Extend RecyclerView.Adapter<ForecastAdapter.ForecastAdapterViewHolder>
-
-
-    // TODO (23) Create a private string array called mWeatherData
+    // COMPLETED (23) Create a private string array called mWeatherData
     private String[] mWeatherData;
 
-    // TODO (47) Create the default constructor (we will pass in parameters in a later lesson)
+    // COMPLETED (47) Create the default constructor (we will pass in parameters in a later lesson)
     public ForecastAdapter() {
     }
 
@@ -43,10 +40,7 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
          }
 
      }
-
-
-
-
+     
     // COMPLETED (24) Override onCreateViewHolder
     // COMPLETED (25) Within onCreateViewHolder, inflate the list item xml into a view
     // COMPLETED (26) Within onCreateViewHolder, return a new ForecastAdapterViewHolder with the above view passed in as a parameter
