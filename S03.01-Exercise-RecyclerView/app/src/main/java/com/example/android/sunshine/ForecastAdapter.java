@@ -40,7 +40,7 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.Foreca
          }
 
      }
-     
+
     // COMPLETED (24) Override onCreateViewHolder
     // COMPLETED (25) Within onCreateViewHolder, inflate the list item xml into a view
     // COMPLETED (26) Within onCreateViewHolder, return a new ForecastAdapterViewHolder with the above view passed in as a parameter
