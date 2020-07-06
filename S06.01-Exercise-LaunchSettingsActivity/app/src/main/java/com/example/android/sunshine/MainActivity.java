@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity implements
          * created and (if the activity/fragment is currently started) starts the loader. Otherwise
          * the last created loader is re-used.
          */
-        getSupportLoaderManager().initLoader(loaderId, bundleForLoader, callback);
+        LoaderManager.getInstance(this).initLoader(loaderId, bundleForLoader, callback);
 
         Log.d(TAG, "onCreate: registering preference changed listener");
     }
@@ -340,7 +340,7 @@ public class MainActivity extends AppCompatActivity implements
 
         if (id == R.id.action_refresh) {
             invalidateData();
-            getSupportLoaderManager().restartLoader(FORECAST_LOADER_ID, null, this);
+            LoaderManager.getInstance(this).restartLoader(FORECAST_LOADER_ID, null, this);
             return true;
         }
 
@@ -349,11 +349,12 @@ public class MainActivity extends AppCompatActivity implements
             return true;
         }
 
-        // TODO (1) Add new Activity called SettingsActivity using Android Studio wizard
-        // Do step 2 in SettingsActivity
-        // TODO (2) Set setDisplayHomeAsUpEnabled to true on the support ActionBar
-
-        // TODO (6) Launch SettingsActivity when the Settings option is clicked
+        // COMPLETED (6) Launch SettingsActivity when the Settings option is clicked
+        if (id == R.id.action_settings) {
+            Intent startSettingsActivity = new Intent(this, SettingsActivity.class);
+            startActivity(startSettingsActivity);
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
