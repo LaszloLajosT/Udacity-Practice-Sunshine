@@ -23,8 +23,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
 
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    // TODO (1) Add preferences dependency to gradle
-
+    // Completed (1) Add preferences dependency to gradle
+    implementation "androidx.preference:preference:1.1.1"
     // Instrumentation dependencies use androidTestImplementation
     // (as opposed to testImplementation for local unit tests run in the JVM)
     androidTestImplementation 'junit:junit:4.13'
