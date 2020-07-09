@@ -16,8 +16,10 @@
 package com.example.android.sunshine;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
 import android.view.MenuItem;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * SettingsActivity is responsible for displaying the {@link SettingsFragment}. It is also
