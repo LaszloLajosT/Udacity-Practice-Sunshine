@@ -16,22 +16,14 @@
 package com.example.android.sunshine;
 
 import android.content.Intent;
-import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.LoaderManager;
-import android.support.v4.app.ShareCompat;
-import android.support.v4.content.CursorLoader;
-import android.support.v4.content.Loader;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.core.app.ShareCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
-
-import com.example.android.sunshine.data.WeatherContract;
-import com.example.android.sunshine.utilities.SunshineDateUtils;
-import com.example.android.sunshine.utilities.SunshineWeatherUtils;
 
 public class DetailActivity extends AppCompatActivity {
 //      TODO (21) Implement LoaderManager.LoaderCallbacks<Cursor>
@@ -61,7 +53,7 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 //      TODO (12) Remove mWeatherDisplay TextView
-        mWeatherDisplay = (TextView) findViewById(R.id.tv_display_weather);
+        mWeatherDisplay = findViewById(R.id.tv_display_weather);
 //      TODO (13) Find each of the TextViews by ID
 
 //      TODO (14) Remove the code that checks for extra text
