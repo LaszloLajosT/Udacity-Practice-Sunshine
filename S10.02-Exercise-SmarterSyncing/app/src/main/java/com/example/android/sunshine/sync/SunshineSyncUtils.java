@@ -17,7 +17,7 @@ package com.example.android.sunshine.sync;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 
 public class SunshineSyncUtils {
