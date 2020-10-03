@@ -16,8 +16,13 @@ android {
             minifyEnabled false
         }
     }
+    buildFeatures {
 
-    dataBinding.enabled = true
+        dataBinding true
+
+        // for view binding:
+        // viewBinding true
+    }
 }
 
 dependencies {
