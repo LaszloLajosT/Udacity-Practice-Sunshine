@@ -29,7 +29,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -37,14 +37,14 @@
          - This Guideline divides the screen into a left half and a right half and is used to    -
          - anchor the views to the middle of the screen.                                         -
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
             android:id="@+id/horizontal_middle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.5"
             tools:layout_editor_absoluteX="192dp"
-            tools:layout_editor_absoluteY="0dp"/>
+            tools:layout_editor_absoluteY="0dp" />
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          - Selected day's date                                                                   -
@@ -129,7 +129,7 @@
             app:layout_constraintBaseline_toBaselineOf="@+id/weather_description"
             app:layout_constraintLeft_toLeftOf="@+id/high_temperature"
             app:layout_constraintRight_toRightOf="@+id/high_temperature"
-            tools:text="10\u00b0"/>
+            tools:text="10\u00b0" />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
