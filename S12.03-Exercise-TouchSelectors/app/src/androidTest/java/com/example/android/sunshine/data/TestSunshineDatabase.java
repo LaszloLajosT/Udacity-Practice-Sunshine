@@ -21,8 +21,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.platform.app.InstrumentationRegistry;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -64,8 +64,8 @@ public class TestSunshineDatabase {
     /*
      * Context used to perform operations on the database and create WeatherDbHelpers.
      */
-    private final Context context = InstrumentationRegistry.getTargetContext();
-
+    //private final Context context = InstrumentationRegistry.getTargetContext();
+    private final Context context = InstrumentationRegistry.getInstrumentation().getTargetContext();
     /*
      * In order to verify that you have set up your classes properly and followed our TODOs, we
      * need to create what's called a Change Detector Test. In almost any other situation, these
