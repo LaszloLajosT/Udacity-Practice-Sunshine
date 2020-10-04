@@ -29,7 +29,7 @@
 <!-- TODO (3) Create a touch selector called today_touch_selector for the today list item layout -->
 
 <!-- TODO (4) Replace the background color for the today list item with today_touch_selector -->
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -43,7 +43,7 @@
      - This Guideline divides the screen into a left half and a right half and is used to        -
      - anchor the views to the middle of the screen.                                             -
      - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/horizontal_middle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -145,4 +145,4 @@
         app:layout_constraintRight_toRightOf="@+id/high_temperature"
         tools:text="10\u00b0"/>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
